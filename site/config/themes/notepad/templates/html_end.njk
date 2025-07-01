@@ -1,0 +1,12 @@
+{% set paginator = util.paginate() %}
+{% if paginator.length>1 %}
+<div class="container pagination">
+  {% for pagina in paginator %}
+  <a href="{{ pagina.link }}">{{ pagina.label }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+<footer>© {{ config.author }}</footer>
+</body>
+
+</html>

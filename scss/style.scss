@@ -1,0 +1,74 @@
+@use "../node_modules/@picocss/pico/scss/pico.scss";
+
+body,
+html {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body>main {
+  flex-grow: 1;
+}
+
+body>footer {
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 2px solid black;
+  margin: 0 1rem;
+  color: #888;
+}
+
+.container.text {
+  padding-top: 2rem;
+  max-width: 32rem;
+}
+
+.pagination {
+  text-align: center;
+  padding: 1rem 0;
+
+  a,
+  .selflink {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 160%;
+  }
+}
+
+figure.rounded img {
+  border-radius: 0.2rem;
+}
+
+/* .title { */
+/*   margin-top: 2rem; */
+/* } */
+
+.notepad_nav {
+  margin: 0 1rem;
+  border-bottom: 2px solid black;
+}
+
+.tags {
+  margin-bottom: 1rem;
+}
+
+span.tag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: silver;
+
+  &:hover {
+    background-color: gray;
+  }
+
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+}

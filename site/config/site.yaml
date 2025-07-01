@@ -1,0 +1,22 @@
+#site properties
+title: "Mukha example site"
+motto: "Proud to be default"
+url: "https://example.site"
+theme: notepad
+author: Incognito
+description: |-
+  The example site for Mukha SSG
+  with minimal theme
+#default maximum length of the list;
+#max number of entries on single page
+#of multipage lists
+list_length: 10
+
+#tags...
+tags_dir: "/tags"
+tags_page: "/tags/index.html"
+
+#RSS props
+rss_uri: "/rss.xml"
+#max count of rss feed items
+rss_length: 30

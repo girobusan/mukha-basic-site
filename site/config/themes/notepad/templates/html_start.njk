@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ config.title }} | {{ page.meta.title }}</title>
+  <link href="/_theme/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="notepad_nav">
+    <nav class="container notepad">
+      <ul>
+        <li><strong><a href="/index.html">{{ config.title }}</a></strong></li>
+      </ul>
+      {% set menu = list.getNearDirs("/index.html") %}
+      <ul>
+        {% for me in menu %}
+        <li><a href="{{ me.file.path }}">{{ me.meta.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+
+    </nav>
+  </div>

@@ -1,0 +1,46 @@
+{% include "html_start.njk"%}
+<main class="container text">
+  {% set bcs = list.getBreadcrumbs(page , 1) %}
+  {% if bcs.length>0 %}
+  <nav aria-label="breadcrumb">
+    <ul>
+      {% for B in bcs %}
+      <li><a href="{{B.file.path}}">{{ B. meta.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+  <h1 class="title">{{ page.meta.title }}</h1>
+  {% if(page.meta.tags) %}
+  <div class="tags">
+    {%for tag in page.meta.tags %}
+    <span class="tag"><a href="{{ tag.file.path }}">{{ tag.meta.title }}</a></span>
+    {%endfor %}
+  </div>
+  {% endif %}
+
+  {{ html }}
+  {% set pages_here = list.getNearFiles(page.file.path) %}
+
+  {% if(pages_here and page.index and not page.list) %}
+  {{ splitToPages(pages_here , 5 )}}
+  <ul>
+    {% for P in page.list_page %}
+    <li><strong><a href="{{ P.file.path }}">{{ P.meta.title}}</a></strong>
+      <div><small>{{ P.meta.excerpt}}</small></div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if(page.list) %}
+  <ul>
+    {% for PL in page.list %}
+    <li><a href="{{PL.file.path}}">{{PL.meta.title}}</a>{% if(PL.list) %}<small>({{PL.list.length}})</small>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+</main>
+{% include "html_end.njk"%}
