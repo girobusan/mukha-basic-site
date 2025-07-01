@@ -36,7 +36,7 @@
   {% if(page.list) %}
   <ul>
     {% for PL in page.list %}
-    <li><a href="{{PL.file.path}}">{{PL.meta.title}}</a>{% if(PL.list) %}<small>({{PL.list.length}})</small>{% endif %}
+    <li><a href="{{PL.file.path}}">{{PL.meta.title}}</a>{% if(PL.list) %} <small>({{PL.list.length}})</small>{% endif %}
     </li>
     {% endfor %}
   </ul>
