@@ -24,7 +24,7 @@ async function buildCSS() {
 async function productionCSS() {
   return (
     src("scss/style.scss")
-      .pipe(sass().on("error", sass.logError))
+      // .pipe(sass().on("error", sass.logError))
       // .pipe(purgecss({ content: ["static/**/*.html"] }))
       .pipe(sass({ style: "compressed" }).on("error", sass.logError))
       .pipe(dest("site/config/themes/notepad/assets/"))
