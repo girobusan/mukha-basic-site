@@ -6,6 +6,6 @@ This is your basic Mukha-powered site.
 
 ```@image
 url: /pix/bear.jpg
-caption: "Nice bear"
+caption: "Courtesy of <a href='https://placebear.com/'>placebear.com</a>"
 classes: ["rounded"]
 ```

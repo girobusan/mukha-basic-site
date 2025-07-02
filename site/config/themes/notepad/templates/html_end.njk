@@ -6,7 +6,9 @@
   {% endfor %}
 </div>
 {% endif %}
-<footer>© {{ config.author }}</footer>
+<footer>{% if config.author %}© {{ config.author }} 2025 | {% endif %} <a href="{{config.rss_uri}}">RSS</a>
+  | <a href="{{config.atom_uri}}">Atom</a>
+</footer>
 </body>
 
 </html>

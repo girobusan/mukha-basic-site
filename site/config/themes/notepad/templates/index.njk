@@ -10,7 +10,7 @@
     </ul>
   </nav>
   {% endif %}
-  <h1 class="title">{{ page.meta.title }}</h1>
+  <h1 class="title">{% if page.tag %}Tag: {% endif %}{{ page.meta.title }}</h1>
   {% if(page.meta.tags) %}
   <div class="tags">
     {%for tag in page.meta.tags %}
@@ -20,13 +20,27 @@
   {% endif %}
 
   {{ html }}
+  {% if page.meta.date and page.meta.date.getTime()>100 %}
+  <small style="opacity:0.5">
+    <p>{{ util.niceDate(page.meta.date)}}</p>
+  </small>
+  {% endif %}
   {% set pages_here = list.getNearFiles(page.file.path) %}
+  {% if pages_here.length==0 and page.file.path.startsWith('/index') and page.index %}
+  {% set add_parent=true %}
+  <h2>Recent additions:</h2>
+  {% set pages_here = list.getAllFiles("/index.html") %}
+  {% endif %}
 
   {% if(pages_here and page.index and not page.list) %}
-  {{ splitToPages(pages_here , 5 )}}
+  {{ splitToPages(pages_here , 8 )}}
   <ul>
     {% for P in page.list_page %}
-    <li><strong><a href="{{ P.file.path }}">{{ P.meta.title}}</a></strong>
+    <li>{% if add_parent %}
+      {% set par = list.getParent(P) %}
+      <small><a href="{{par.file.path}}">{{par.meta.title}}</a>→</small>
+      {% endif %}
+      <strong><a href="{{ P.file.path }}">{{ P.meta.title}}</a></strong>
       <div><small>{{ P.meta.excerpt}}</small></div>
     </li>
     {% endfor %}
