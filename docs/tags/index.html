@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mukha example site | Tags</title>
+  <title>Basic Mukha Site | Tags</title>
   <link href="../_theme/style.css" rel="stylesheet">
 </head>
 
@@ -12,7 +12,7 @@
   <div class="notepad_nav">
     <nav class="notepad">
       <ul>
-        <li><strong><a href="../index.html">Mukha example site</a></strong></li>
+        <li><strong><a href="../index.html">Basic Mukha Site</a></strong></li>
       </ul>
       <ul>
         <li><a href="../blog/index.html">The Blog</a></li>
@@ -25,14 +25,22 @@
 <main class="container text">
   <h1 class="title">Tags</h1>
 
-  <p>Tags</p>
+  <p>Tags are generated automatically, just list them in frontmatter, Mukha will do the rest.
+Thanks to the unidecode library, you can use tags in any language (almost).</p>
+<pre><code>---
+title: My tagged page
+tags: tags, неожиданность, strange thoughts, मुख
+---
+...text...
+</code></pre>
+<p>You can also create <em>physical</em> pages for your favourite tags, like <a href="correctly.html">this one</a>.</p>
 
 
 
-  <ul>
+  <ul style="column-count:2">
     <li><a href="angry.html">angry</a> <small>(1)</small>    </li>
     <li><a href="brief.html">brief</a> <small>(5)</small>    </li>
-    <li><a href="correctly.html">correctly</a> <small>(1)</small>    </li>
+    <li><a href="correctly.html">Correctly</a> <small>(1)</small>    </li>
     <li><a href="first.html">first</a> <small>(2)</small>    </li>
     <li><a href="fog.html">fog</a> <small>(3)</small>    </li>
     <li><a href="gulf.html">gulf</a> <small>(2)</small>    </li>
@@ -43,7 +51,9 @@
     <li><a href="setting.html">setting</a> <small>(2)</small>    </li>
     <li><a href="steep.html">steep</a> <small>(2)</small>    </li>
     <li><a href="suddenly.html">suddenly</a> <small>(3)</small>    </li>
+    <li><a href="tagged_tag.html">tagged tag</a> <small>(1)</small>    </li>
     <li><a href="wave.html">wave</a> <small>(2)</small>    </li>
+    <li><a href="mukh.html">मुख</a> <small>(1)</small>    </li>
   </ul>
 
 </main>

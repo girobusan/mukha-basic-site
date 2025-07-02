@@ -1,6 +1,6 @@
 ---
 title: forgotten my eight
-tags: pipe,pair,fog
+tags: pipe,pair,fog,मुख
 date: 2025-06-16T06:54:01.046Z
 image: /pix/default.jpg
 excerpt: |-

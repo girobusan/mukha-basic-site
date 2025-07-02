@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Mukha example site</title>
+        <title>Basic Mukha Site</title>
         <link>https://example.site</link>
         <description>The example site for Mukha SSG
 with minimal theme</description>
-        <lastBuildDate>Wed, 02 Jul 2025 06:13:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Jul 2025 12:52:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
@@ -90,7 +90,9 @@ with minimal theme</description>
             <link>https://example.site/index.html</link>
             <guid isPermaLink="false">https://example.site/index.html</guid>
             <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is your basic Mukha-powered site.]]></description>
+            <description><![CDATA[This site is powered by <strong>Mukha</strong> Static Site Generator. Source files for this site are
+available at <a href="https://github.com/girobusan/mukha-basic-site">github</a>. Mukha SSG itself is
+on the early stages of development, <a href="https://github.com/girobusan/mukha-ssg"> github mirror </a> is also available.]]></description>
         </item>
         <item>
             <title><![CDATA[The Blog]]></title>
@@ -99,10 +101,18 @@ with minimal theme</description>
             <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Correctly]]></title>
+            <link>https://example.site/tags/correctly.html</link>
+            <guid isPermaLink="false">https://example.site/tags/correctly.html</guid>
+            <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Tags]]></title>
             <link>https://example.site/tags/index.html</link>
             <guid isPermaLink="false">https://example.site/tags/index.html</guid>
             <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+            <description><![CDATA[Tags are generated automatically, just list them in frontmatter, Mukha will do the rest.
+Thanks to the unidecode library, you can use tags in any language (almost).]]></description>
         </item>
     </channel>
 </rss>

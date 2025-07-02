@@ -48,7 +48,7 @@
   {% endif %}
 
   {% if(page.list) %}
-  <ul>
+  <ul style="column-count:2">
     {% for PL in page.list %}
     <li><a href="{{PL.file.path}}">{{PL.meta.title}}</a>{% if(PL.list) %} <small>({{PL.list.length}})</small>{% endif %}
     </li>
