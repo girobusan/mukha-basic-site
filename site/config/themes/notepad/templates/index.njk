@@ -22,7 +22,7 @@
   {{ html }}
   {% if page.meta.date and page.meta.date.getTime()>100 %}
   <small style="opacity:0.5">
-    <p>{{ util.niceDate(page.meta.date)}}</p>
+    <p>{{ util.dateFormat(page.meta.date , 'dd LLLL yyyy, hh:mm' )}}</p>
   </small>
   {% endif %}
   {% set pages_here = list.getNearFiles(page.file.path) %}
