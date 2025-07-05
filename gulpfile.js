@@ -36,7 +36,11 @@ async function watchCSS() {
 }
 
 async function watchSite() {
-  return watch(["site/"], { delay: 500 }, buildSite);
+  exec("mukha-ssg -w", { cwd: "." }, (err, out, stderr) => {
+    out && console.log(out);
+    stderr && console.log(stderr);
+    err && console.error(err);
+  });
 }
 
 async function watchAll() {
