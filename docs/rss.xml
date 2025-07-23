@@ -5,7 +5,7 @@
         <link>https://example.site</link>
         <description>The example site for Mukha SSG
 with minimal theme</description>
-        <lastBuildDate>Fri, 04 Jul 2025 13:52:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Jul 2025 13:10:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
@@ -90,7 +90,7 @@ with minimal theme</description>
             <link>https://example.site/index.html</link>
             <guid isPermaLink="false">https://example.site/index.html</guid>
             <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-            <description><![CDATA[This site is powered by <strong>Mukha</strong> Static Site Generator. Source files for this site are
+            <description><![CDATA[This site is powered by <strong>Mukha</strong> Static Site Generator. Source files of this site are
 available at <a href="https://github.com/girobusan/mukha-basic-site">github</a>. Mukha SSG itself is
 on the early stages of development, <a href="https://github.com/girobusan/mukha-ssg"> github mirror </a> is also available.]]></description>
         </item>
