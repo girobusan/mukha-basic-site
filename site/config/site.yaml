@@ -27,3 +27,4 @@ edit_cmd: gedit
 js_api: true
 search: true
 search_lang: ["ru", "en"]
+keep_excerpts: true

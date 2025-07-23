@@ -2881,6 +2881,7 @@ span.tag a {
 input[data-role~=lunr-search]::placeholder {
   opacity: 0.6;
   filter: grayscale(100%);
+  text-align: right;
 }
 
 .search_results {
