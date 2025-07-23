@@ -75,3 +75,21 @@ span.tag {
     text-decoration: none;
   }
 }
+
+input[data-role~="lunr-search"] {
+  &::placeholder {
+    opacity: 0.6;
+    filter: grayscale(100%);
+  }
+}
+
+.search_results {
+  background-color: white !important;
+  z-index: 10000;
+  min-width: 30rem;
+  right: 0;
+
+  button {
+    color: black;
+  }
+}
