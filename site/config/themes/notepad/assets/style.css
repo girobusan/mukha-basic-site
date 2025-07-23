@@ -2890,6 +2890,19 @@ input[data-role~=lunr-search]::placeholder {
   min-width: 30rem;
   right: 0;
 }
+.search_results .search_result {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+.search_results .search_result:last-child {
+  border-bottom: none;
+}
+.search_results .search_excerpt {
+  font-size: 0.8em;
+}
 .search_results button {
   color: black;
+}
+.search_results button:hover {
+  color: red;
 }

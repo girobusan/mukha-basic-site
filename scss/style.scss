@@ -90,7 +90,24 @@ input[data-role~="lunr-search"] {
   min-width: 30rem;
   right: 0;
 
+  .search_result {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .search_excerpt {
+    font-size: 0.8em;
+  }
+
   button {
     color: black;
+
+    &:hover {
+      color: red;
+    }
   }
 }
