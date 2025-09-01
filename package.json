@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mukha-ssg -o docs",
-    "prebuild": "gulp prodCSS"
+    "prebuild": "gulp prodCSS",
+    "dist": "node scripts/dist.mjs"
   },
   "author": "",
   "license": "ISC",
