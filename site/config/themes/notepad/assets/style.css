@@ -2860,6 +2860,31 @@ figure.rounded img {
   margin: 0 1rem;
   border-bottom: 2px solid black;
 }
+.notepad_nav nav li strong {
+  font-weight: bold;
+}
+.notepad_nav nav li strong a {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .notepad_nav nav {
+    flex-direction: column;
+  }
+  .notepad_nav nav ul,
+  .notepad_nav nav ul:first-of-type,
+  .notepad_nav nav ul:last-of-type {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: calc(var(--pico-nav-element-spacing-horizontal) * 0);
+    margin-right: calc(var(--pico-nav-element-spacing-horizontal) * 0);
+  }
+  .notepad_nav nav ul li,
+  .notepad_nav nav ul:first-of-type li,
+  .notepad_nav nav ul:last-of-type li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .tags {
   margin-bottom: 1rem;
