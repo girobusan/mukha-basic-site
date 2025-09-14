@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mukha-ssg -o docs",
+    "build": "mukha-ssg -o docs -c",
     "prebuild": "gulp prodCSS",
     "dist": "node scripts/dist.mjs"
   },
